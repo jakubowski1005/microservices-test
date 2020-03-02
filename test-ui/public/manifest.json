@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Test UI",
+  "name": "Test UI for first microservices application",
   "icons": [
     {
       "src": "favicon.ico",
