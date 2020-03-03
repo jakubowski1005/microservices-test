@@ -1,5 +1,6 @@
 package com.jakubowskiartur.microservice2.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,7 +12,12 @@ public class DeepService {
     public static final String THIRD_MICROSERVICE_SECURED_URL = ".../secured";
     public static final String THIRD_MICROSERVICE_UNSECURED_URL = ".../unsecured";
 
-    private RestTemplate template = new RestTemplate();
+    private RestTemplate template;
+
+    @Autowired
+    public DeepService(RestTemplate template) {
+        this.template = template;
+    }
 
     public List<String> getSecuredDataFromThirdMicroservice() {
         @SuppressWarnings("unchecked")
