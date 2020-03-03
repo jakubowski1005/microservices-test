@@ -26,6 +26,7 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
     compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-eureka-server', version: '1.4.7.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.2.5.RELEASE'
 }
 
 test {
