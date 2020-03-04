@@ -8,8 +8,8 @@ import java.util.List;
 @Service
 public class DeepService {
 
-    public static final String THIRD_MICROSERVICE_UNSECURED_URL = "xyz/unsecured";
-    public static final String THIRD_MICROSERVICE_SECURED_URL = "xyz/secured";
+    public static final String THIRD_MICROSERVICE_UNSECURED_URL = "http://microservice-3/unsecured";
+    public static final String THIRD_MICROSERVICE_SECURED_URL = "http://microservice-3//secured";
 
     private RestTemplate restTemplate = new RestTemplate();
 
