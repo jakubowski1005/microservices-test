@@ -1,0 +1,19 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+  dashboard:
+    enabled: true
+  instance:
+    hostname: localhost
+
+spring:
+  application:
+    name: test-eureka-server
+  security:
+    user:
+      name: testuser
+      password: pass1234
+
+server:
+  port: 8761
